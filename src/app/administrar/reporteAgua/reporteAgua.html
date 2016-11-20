@@ -1,0 +1,13 @@
+<div class="container">
+  <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  <canvas id="base" class="chart-horizontal-bar"
+          chart-data="reporteAgua.data" chart-labels="reporteAgua.labels" chart-options="reporteAgua.options"
+          chart-series="reporteAgua.series">
+  </canvas>
+
+  <md-button class="md-raised md-primary" ng-click="reporteAgua.toggle()">Toggle</md-button>
+
+  <canvas id="base2" class="chart-base" chart-type="reporteAgua.type"
+          chart-data="reporteAgua.data" chart-labels="reporteAgua.labels" >
+  </canvas>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>PH</th>
+        <th>Conductividad</th>
+        <th>Solidos Disueltos</th>
+        <th>Salinidad</th>
+        <th>Temperatura</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="sensor in sensoresAgua.sensors">
+        <td>{{sensor.ph}}</td>
+        <td>{{sensor.conductividad}}</td>
+        <td>{{sensor.solidos_disueltos}}</td>
+        <td>{{sensor.salinidad}}</td>
+        <td>{{sensor.temperatura}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
